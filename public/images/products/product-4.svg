@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 533" width="400" height="533">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899"/>
+      <stop offset="100%" style="stop-color:#F9A8D4"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="533" fill="url(#bg4)"/>
+  <!-- White overlay panel -->
+  <rect x="30" y="80" width="340" height="420" rx="8" fill="rgba(255,255,255,0.1)"/>
+  <!-- Border frame -->
+  <rect x="16" y="16" width="368" height="501" rx="4" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="1.5"/>
+  <!-- Top brand -->
+  <text x="200" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="rgba(255,255,255,0.8)">RUBI DIGITAL DOWNLOADS</text>
+  <!-- House icon -->
+  <polygon points="200,100 260,155 260,220 140,220 140,155" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+  <!-- Roof -->
+  <polygon points="200,90 275,155 125,155" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2.5"/>
+  <!-- Door -->
+  <rect x="182" y="175" width="36" height="45" rx="2" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <!-- Door knob -->
+  <circle cx="211" cy="200" r="3" fill="rgba(255,255,255,0.3)"/>
+  <!-- Window left -->
+  <rect x="150" y="165" width="22" height="20" rx="1" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <!-- Window right -->
+  <rect x="228" y="165" width="22" height="20" rx="1" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <!-- Heart accent -->
+  <g transform="translate(200,240) scale(0.6)">
+    <path d="M0,-15 C-15,-35 -45,-10 0,20 C45,-10 15,-35 0,-15Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  </g>
+  <!-- Decorative line -->
+  <line x1="80" y1="275" x2="320" y2="275" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <!-- Title -->
+  <text x="200" y="310" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#FFFFFF">First-Time Homebuyer</text>
+  <text x="200" y="340" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700" fill="#FFFFFF">Workbook</text>
+  <!-- Subtitle -->
+  <text x="200" y="375" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.85)">Volume 2</text>
+  <!-- Decorative line below subtitle -->
+  <line x1="150" y1="390" x2="250" y2="390" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <!-- Author -->
+  <text x="200" y="435" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="rgba(255,255,255,0.8)">By James Villarrubia</text>
+  <!-- Instant Download badge -->
+  <rect x="260" y="68" width="110" height="24" rx="12" fill="rgba(255,255,255,0.25)" stroke="rgba(255,255,255,0.5)" stroke-width="1"/>
+  <text x="315" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1" fill="#FFFFFF">INSTANT DOWNLOAD</text>
+</svg>
