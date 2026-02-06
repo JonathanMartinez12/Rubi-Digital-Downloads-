@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 533" width="400" height="533">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280"/>
+      <stop offset="100%" style="stop-color:#4B5563"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="533" fill="url(#bg6)"/>
+  <!-- Warm accent strip -->
+  <rect x="0" y="250" width="400" height="4" fill="rgba(245,158,11,0.4)"/>
+  <!-- Border frame -->
+  <rect x="16" y="16" width="368" height="501" rx="4" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <!-- Top brand -->
+  <text x="200" y="50" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="600" letter-spacing="3" fill="rgba(255,255,255,0.6)">RUBI DIGITAL DOWNLOADS</text>
+  <!-- House with checklist motif -->
+  <polygon points="200,95 260,145 260,210 140,210 140,145" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <polygon points="200,85 275,145 125,145" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <!-- Checklist lines -->
+  <rect x="155" y="155" width="12" height="12" rx="2" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <line x1="158" y1="162" x2="162" y2="166" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/>
+  <line x1="162" y1="166" x2="170" y2="156" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/>
+  <line x1="175" y1="162" x2="235" y2="162" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="155" y="175" width="12" height="12" rx="2" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <line x1="158" y1="182" x2="162" y2="186" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/>
+  <line x1="162" y1="186" x2="170" y2="176" stroke="rgba(245,158,11,0.5)" stroke-width="1.5"/>
+  <line x1="175" y1="182" x2="235" y2="182" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="155" y="195" width="12" height="12" rx="2" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <line x1="175" y1="202" x2="235" y2="202" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Star/sparkle accent -->
+  <g transform="translate(200,235)">
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="rgba(245,158,11,0.4)" stroke-width="1.5"/>
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="rgba(245,158,11,0.4)" stroke-width="1.5"/>
+    <line x1="-5" y1="-5" x2="5" y2="5" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+    <line x1="5" y1="-5" x2="-5" y2="5" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  </g>
+  <!-- Decorative line -->
+  <line x1="80" y1="275" x2="320" y2="275" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <!-- Title -->
+  <text x="200" y="315" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#FFFFFF">New Homeowner</text>
+  <text x="200" y="350" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#FFFFFF">Starter Kit</text>
+  <!-- Subtitle -->
+  <text x="200" y="390" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-style="italic" fill="rgba(255,255,255,0.7)">Your First Year</text>
+  <!-- Decorative line below subtitle -->
+  <line x1="150" y1="405" x2="250" y2="405" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <!-- Author -->
+  <text x="200" y="450" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="rgba(255,255,255,0.75)">By James Villarrubia</text>
+  <!-- Instant Download badge -->
+  <rect x="260" y="68" width="110" height="24" rx="12" fill="rgba(245,158,11,0.25)" stroke="rgba(245,158,11,0.5)" stroke-width="1"/>
+  <text x="315" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1" fill="#FFFFFF">INSTANT DOWNLOAD</text>
+</svg>
