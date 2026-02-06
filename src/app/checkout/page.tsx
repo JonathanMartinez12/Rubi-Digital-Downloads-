@@ -60,28 +60,38 @@ export default function CheckoutPage() {
     setIsProcessing(true);
 
     try {
-      const response = await fetch("/api/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          productIds: items.map((item) => item.product.id),
-          email: email.trim(),
-        }),
-      });
+      // Check if Stripe is configured
+      const isStripeConfigured = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
-      const data = await response.json();
+      if (isStripeConfigured) {
+        // Production: Use Stripe Checkout
+        const response = await fetch("/api/checkout", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            items: items.map((item) => ({
+              id: item.product.id,
+              name: item.product.name,
+              price: item.product.price,
+              coverImage: item.product.coverImage,
+            })),
+            email: email.trim(),
+          }),
+        });
 
-      if (!response.ok) {
-        throw new Error(data.error || "Something went wrong. Please try again.");
-      }
-
-      // Redirect to Stripe checkout
-      if (data.url) {
-        window.location.href = data.url;
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(data.error || "Something went wrong.");
+        }
+        if (data.url) {
+          window.location.href = data.url;
+        } else {
+          throw new Error("No checkout URL returned.");
+        }
       } else {
-        throw new Error("No checkout URL returned. Please try again.");
+        // Demo mode: Simulate checkout and redirect to success
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+        router.push(`/success?session_id=demo_${Date.now()}`);
       }
     } catch (err) {
       setError(
