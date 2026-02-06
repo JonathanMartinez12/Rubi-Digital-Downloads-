@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { products } from "@/lib/products";
 import ProductCard from "@/components/product-card";
 
@@ -14,8 +14,14 @@ export function FeaturedProducts() {
   const featuredProducts = products.filter((p) => p.featured);
 
   return (
-    <section ref={ref} className="py-20 sm:py-28 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section ref={ref} className="py-20 sm:py-28 bg-white relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <div className="absolute -top-40 right-[10%] w-80 h-80 rounded-full bg-orange-50/50 blur-3xl" />
+        <div className="absolute -bottom-40 left-[10%] w-80 h-80 rounded-full bg-teal-50/40 blur-3xl" />
+      </div>
+
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,11 +29,15 @@ export function FeaturedProducts() {
           transition={{ duration: 0.6 }}
           className="text-center mb-14"
         >
+          <span className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-100 px-4 py-1.5 text-sm font-medium text-orange-700 mb-4">
+            <Sparkles className="h-3.5 w-3.5" />
+            Bestselling Resources
+          </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
             Featured Products
           </h2>
-          <p className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">
-            Our most popular financial workbooks and guides
+          <p className="mt-3 text-lg text-slate-500 max-w-2xl mx-auto">
+            Our most popular financial workbooks — trusted by thousands of customers to build wealth and achieve financial freedom
           </p>
         </motion.div>
 
@@ -52,10 +62,10 @@ export function FeaturedProducts() {
         >
           <Link
             href="/shop"
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-8 py-3.5 text-base font-semibold text-slate-700 transition-all duration-200 hover:bg-slate-50 hover:border-slate-400 hover:-translate-y-0.5"
+            className="group inline-flex items-center gap-2 rounded-xl bg-slate-900 px-8 py-3.5 text-base font-semibold text-white transition-all duration-300 hover:bg-slate-800 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-slate-900/20"
           >
             View All Products
-            <ArrowRight className="h-4 w-4" />
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
           </Link>
         </motion.div>
       </div>
